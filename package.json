@@ -4,10 +4,10 @@
   "description": "graphql server to serve keanu reaves pictures, astraseneca code challenge",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run generate",
+    "postinstall": "pnpm generate",
     "compile": "tsc",
     "dev": "ts-node-dev --respawn ./src/index.ts",
-    "start": "npm run compile && nodemon ./dist/index.js",
+    "start": "pnpm compile && nodemon ./dist/index.js",
     "generate": "graphql-codegen"
   },
   "dependencies": {

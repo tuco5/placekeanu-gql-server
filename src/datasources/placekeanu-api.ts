@@ -6,7 +6,19 @@ export class PlaceKeanuAPI extends RESTDataSource {
     this.baseURL = "https://placekeanu.com/";
   }
 
-  getKeanuImage(width: string) {
-    return this.get(`/${width}`);
+  getKeanuImage({
+    width,
+    height,
+    y,
+    g,
+  }: {
+    width: number;
+    height?: number;
+    y?: boolean;
+    g?: boolean;
+  }) {
+    return this.get(
+      `${width}/${height ? `${height}/` : ""}${y ? "y" : ""}${g ? "g" : ""}`
+    );
   }
 }

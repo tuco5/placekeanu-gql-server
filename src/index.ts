@@ -11,7 +11,10 @@ async function startApolloServer() {
     resolvers,
   });
 
+  const port = Number.parseInt(process.env.PORT) || 4000;
+
   const { url } = await startStandaloneServer(server, {
+    listen: { port },
     context: async () => {
       const { cache } = server;
 

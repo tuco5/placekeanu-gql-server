@@ -4,6 +4,8 @@ RUN corepack enable && corepack prepare pnpm@8.9.2 --activate
 
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+ENV PORT=4000
+
 RUN corepack enable
 WORKDIR /app
 

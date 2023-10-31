@@ -15,11 +15,11 @@
 
 ## How to run with docker
 
-To run with docker it is necesary to have install docker on your machine. You can go ancheck how over this link [docker install guide](https://docs.docker.com/engine/install/). After installing then run docker on your machine and pull the graphql server image form my docker hub repo:
+To run with docker it is necesary to have install docker on your machine. You can go and check how here [docker install guide](https://docs.docker.com/engine/install/). After installing then run docker on your machine and pull the graphql server image form my docker hub repo:
 
-1. Pull the image container `docker pull teutorigos/apollo-server`
+1. Pull the image container `docker pull teutorigos/apollo-server:cloud`
 
-2. Run the container wirh `docker run -p 4000:4000 teutorigos/apollo-server`
+2. Run the container wirh `docker run -p 4000:4000 teutorigos/apollo-server:cloud`
 
 3. Go to [localhost:4000](http://localhost:4000)
 

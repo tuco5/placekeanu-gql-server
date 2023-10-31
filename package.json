@@ -1,7 +1,7 @@
 {
   "name": "placekeanu-gql-server",
   "version": "1.0.0",
-  "description": "graphql server to serve keanu reaves pictures, astraseneca code challenge",
+  "description": "graphql server for keanu reaves pictures, code challenge",
   "main": "index.js",
   "scripts": {
     "compile": "tsc --build",
